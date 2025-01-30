@@ -1,25 +1,25 @@
 #include <GL/glut.h>
-#include <cmath> 
+#include <cmath>
 
-void drawHouse() {
-    glClear(GL_COLOR_BUFFER_BIT); 
+void landscape() {
+    glClear(GL_COLOR_BUFFER_BIT);
 
     //road section
     glColor3f(0.196f, 0.196f, 0.196f);
     glBegin(GL_POLYGON);
-    glVertex2f(10.0f, -10.0f); 
-    glVertex2f(-10.0f, -10.0f);  
-    glVertex2f(-10.0f, -5.0f);   
-    glVertex2f(10.0f, -5.0f);  
+    glVertex2f(10.0f, -10.0f);
+    glVertex2f(-10.0f, -10.0f);
+    glVertex2f(-10.0f, -5.0f);
+    glVertex2f(10.0f, -5.0f);
     glEnd();
-   
+
 
 
     //Land section
-   
+
     // Set color to light green using glColor3f
-     glColor3f(0.3f, 1.0f, 0.2f); 
- 
+     glColor3f(0.3f, 1.0f, 0.2f);
+
     glBegin(GL_POLYGON);
     glVertex2f(10.0f, -5.0f);
     glVertex2f(-10.0f, -5.0f);
@@ -30,18 +30,18 @@ void drawHouse() {
     // house full
     glColor3f(0.8f, 0.33f, 0.0f);
     glBegin(GL_POLYGON);
-    glVertex2f(-9.0f, 2.0f); 
-    glVertex2f(-1.0f, 2.0f);  
-    glVertex2f(-1.0f, -3.0f);  
-    glVertex2f(-9.0f, -3.0f);  
+    glVertex2f(-9.0f, 2.0f);
+    glVertex2f(-1.0f, 2.0f);
+    glVertex2f(-1.0f, -3.0f);
+    glVertex2f(-9.0f, -3.0f);
     glEnd();
 
     // tringle home
     glColor3f(0.2f, 0.2f, 0.2f);
     glBegin(GL_TRIANGLES);
-    glVertex2f(0.0f, 2.0f);  
-    glVertex2f(-10.0f, 2.0f);   
-    glVertex2f(-5.0f, 6.0f);   
+    glVertex2f(0.0f, 2.0f);
+    glVertex2f(-10.0f, 2.0f);
+    glVertex2f(-5.0f, 6.0f);
     glEnd();
 
     // door
@@ -49,7 +49,7 @@ void drawHouse() {
     glBegin(GL_POLYGON);
     glVertex2f(-6.0f,0.0f);
     glVertex2f(-6.0f,-3.0f);
-    glVertex2f(-4.0f,-3.0f); 
+    glVertex2f(-4.0f,-3.0f);
     glVertex2f(-4.0f,0.0f);
     glEnd();
 
@@ -74,19 +74,19 @@ void drawHouse() {
      // home road
     glColor3f(0.196f, 0.196f, 0.196f);
     glBegin(GL_POLYGON);
-    glVertex2f(-6.0f, -3.0f); 
-    glVertex2f(-6.0f, -5.0f);  
-    glVertex2f(-4.0f, -5.0f);   
-    glVertex2f(-4.0f, -3.0f);  
+    glVertex2f(-6.0f, -3.0f);
+    glVertex2f(-6.0f, -5.0f);
+    glVertex2f(-4.0f, -5.0f);
+    glVertex2f(-4.0f, -3.0f);
     glEnd();
 
      // home road
     glColor3f(1.0f, 1.0f, 1.0f);
     glBegin(GL_POLYGON);
-    glVertex2f(-5.0f, -3.4f); 
-    glVertex2f(-5.0f, -4.6f);  
-    glVertex2f(-5.1f, -4.6f);   
-    glVertex2f(-5.1f, -3.4f);  
+    glVertex2f(-5.0f, -3.4f);
+    glVertex2f(-5.0f, -4.6f);
+    glVertex2f(-5.1f, -4.6f);
+    glVertex2f(-5.1f, -3.4f);
     glEnd();
 
         // Sun
@@ -102,7 +102,7 @@ void drawHouse() {
     }
     glEnd();
 
-    
+
 
     //Full tree start
 
@@ -127,7 +127,7 @@ void drawHouse() {
         glVertex2f(leep1X + x, leep1Y + y);
     }
     glEnd();
-    
+
     //leep 2
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     float leep2X = -1.0f, leep2Y = 1.5f, leep2Radius = 1.0f;
@@ -181,7 +181,7 @@ void drawHouse() {
     glEnd();
 
     //leep 6
-    
+
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     float leep6X = 2.0f, leep6Y = 3.7f, leep6Radius = 1.6f;
     glBegin(GL_TRIANGLE_FAN);
@@ -206,7 +206,7 @@ void drawHouse() {
         glVertex2f(leep7X + x, leep7Y + y);
     }
     glEnd();
-    
+
     //leep 8
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     float leep8X = 0.5f, leep8Y = 3.5f, leep8Radius = 1.6f;
@@ -240,9 +240,9 @@ void drawHouse() {
 
    //triangle
     glBegin(GL_TRIANGLES);
-    glVertex2f(-4.0f, -4.2f);  
-    glVertex2f(-3.0f, -4.2f);  
-    glVertex2f(-3.5f, -3.2f);   
+    glVertex2f(-4.0f, -4.2f);
+    glVertex2f(-3.0f, -4.2f);
+    glVertex2f(-3.5f, -3.2f);
     glEnd();
 
 
@@ -256,19 +256,19 @@ void drawHouse() {
     glVertex2f(-9.4f,-4.6f);
     glEnd();
 
-    // 
+    //
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     glBegin(GL_TRIANGLES);
-    glVertex2f(-9.8f, -4.6f);  
-    glVertex2f(-8.8f, -4.6f);   
-    glVertex2f(-9.3f, -4.0f); 
+    glVertex2f(-9.8f, -4.6f);
+    glVertex2f(-8.8f, -4.6f);
+    glVertex2f(-9.3f, -4.0f);
     glEnd();
 
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     glBegin(GL_TRIANGLES);
-    glVertex2f(-9.8f, -4.3f);  
-    glVertex2f(-8.8f, -4.3f);   
-    glVertex2f(-9.3f, -3.2f);   
+    glVertex2f(-9.8f, -4.3f);
+    glVertex2f(-8.8f, -4.3f);
+    glVertex2f(-9.3f, -3.2f);
     glEnd();
 
     //tree small 3
@@ -283,17 +283,17 @@ void drawHouse() {
     //triangle
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     glBegin(GL_TRIANGLES);
-    glVertex2f(1.0f, -4.6f);  
-    glVertex2f(2.0f, -4.6f);   
-    glVertex2f(1.5f, -3.8f); 
+    glVertex2f(1.0f, -4.6f);
+    glVertex2f(2.0f, -4.6f);
+    glVertex2f(1.5f, -3.8f);
     glEnd();
 
      //triangle
-    
+
     glBegin(GL_TRIANGLES);
-    glVertex2f(1.0f, -4.2f);  
-    glVertex2f(2.0f, -4.2f);  
-    glVertex2f(1.5f, -3.2f);   
+    glVertex2f(1.0f, -4.2f);
+    glVertex2f(2.0f, -4.2f);
+    glVertex2f(1.5f, -3.2f);
     glEnd();
 
     // tree small 4
@@ -308,14 +308,14 @@ void drawHouse() {
     //triangle
     glColor3f(0.0f, 0.5f, 0.0f);  // Green
     glBegin(GL_TRIANGLES);
-    glVertex2f(6.0f, -4.6f);  
-    glVertex2f(7.0f, -4.6f);   
-    glVertex2f(6.5f, -3.8f);   
+    glVertex2f(6.0f, -4.6f);
+    glVertex2f(7.0f, -4.6f);
+    glVertex2f(6.5f, -3.8f);
 
     glBegin(GL_TRIANGLES);
-    glVertex2f(6.0f, -4.2f);  
-    glVertex2f(7.0f, -4.2f);  
-    glVertex2f(6.5f, -3.2f);   
+    glVertex2f(6.0f, -4.2f);
+    glVertex2f(7.0f, -4.2f);
+    glVertex2f(6.5f, -3.2f);
     glEnd();
 
     // small tree 5
@@ -331,41 +331,41 @@ void drawHouse() {
      //triangle
     glColor3f(0.0f, 0.5f, 0.0f); // Green
     glBegin(GL_TRIANGLES);
-    glVertex2f(9.4f, -4.6f);  
-    glVertex2f(10.2f, -4.6f);   
-    glVertex2f(9.9f, -3.8f);   
+    glVertex2f(9.4f, -4.6f);
+    glVertex2f(10.2f, -4.6f);
+    glVertex2f(9.9f, -3.8f);
     glEnd();
 
     glBegin(GL_TRIANGLES);
-    glVertex2f(9.4f, -4.2f);  
-    glVertex2f(10.2f, -4.2f);  
-    glVertex2f(9.9f, -3.2f);   
+    glVertex2f(9.4f, -4.2f);
+    glVertex2f(10.2f, -4.2f);
+    glVertex2f(9.9f, -3.2f);
     glEnd();
 
     // mountend
     glColor3f(0.4f, 0.2f, 0.1f);
     glBegin(GL_TRIANGLES);
-    glVertex2f(6.0f, 1.0f);  
-    glVertex2f(10.0f, 1.0f);  
-    glVertex2f(8.0f, 7.0f);   
+    glVertex2f(6.0f, 1.0f);
+    glVertex2f(10.0f, 1.0f);
+    glVertex2f(8.0f, 7.0f);
     glEnd();
 
     glBegin(GL_TRIANGLES);
-    glVertex2f(3.0f, 1.0f);  
-    glVertex2f(7.0f, 1.0f);  
-    glVertex2f(5.5f, 6.0f);   
+    glVertex2f(3.0f, 1.0f);
+    glVertex2f(7.0f, 1.0f);
+    glVertex2f(5.5f, 6.0f);
     glEnd();
 
     glBegin(GL_TRIANGLES);
-    glVertex2f(4.0f, 1.0f);  
-    glVertex2f(8.0f, 1.0f);  
-    glVertex2f(6.5f, 5.0f);   
+    glVertex2f(4.0f, 1.0f);
+    glVertex2f(8.0f, 1.0f);
+    glVertex2f(6.5f, 5.0f);
     glEnd();
 
      glBegin(GL_TRIANGLES);
-    glVertex2f(7.0f, 1.0f);  
-    glVertex2f(12.0f, 1.0f);  
-    glVertex2f(9.5f, 8.0f);   
+    glVertex2f(7.0f, 1.0f);
+    glVertex2f(12.0f, 1.0f);
+    glVertex2f(9.5f, 8.0f);
     glEnd();
 
 
@@ -476,7 +476,7 @@ void drawHouse() {
     glVertex2f(-2.0f, -7.6f);
     glVertex2f(-2.0f, -7.4f);
     glEnd();
-    
+
     //3
     glColor3f(1.0f, 1.0f, 1.0f);
     glBegin(GL_POLYGON);
@@ -504,10 +504,10 @@ void drawHouse() {
     glVertex2f(12.0f, -7.4f);
     glEnd();
 
-    
 
 
-    //mag a 
+
+    //mag a
     //mag a 1
     glColor3f(1.0f, 1.0f, 1.0f); // Pure white
     float maga1X = 6.0f, maga1Y = 8.0f, maga1Radius = .6f;
@@ -690,7 +690,7 @@ void drawHouse() {
          }
     glEnd();
 
-// bus 
+// bus
     glColor3f(1.0f, 0.27f, 0.0f);
     glBegin(GL_POLYGON);
     glVertex2f(-5.0f, -8.0f);
@@ -706,7 +706,7 @@ void drawHouse() {
     glVertex2f(0.0f, -7.0f);
     glVertex2f(-0.6f, -5.5f);
     glEnd();
-    
+
     // bus window
     glColor3f(1.0f, 1.0f, 1.0f);
     glBegin(GL_POLYGON);
@@ -777,7 +777,7 @@ void drawHouse() {
     glVertex2f(8.0f, -8.0f);
     glVertex2f(8.0f, -7.0f);
     glEnd();
-    
+
     glColor3f(0.0f, 0.0f, 0.0f); // Pure black
     glBegin(GL_POLYGON);
     glVertex2f(5.0f, -6.0f);
@@ -828,9 +828,6 @@ void drawHouse() {
 
 
 
-    
-    
-     
 
 
 
@@ -838,25 +835,25 @@ void drawHouse() {
 
 
 
-    
 
-    glFlush(); 
+
+
+
+
+    glFlush();
 }
 
 void init() {
-    glClearColor(0.529f, 0.808f, 0.922f, 1.0f); 
-    gluOrtho2D(-10, 10, -10, 10); 
+    glClearColor(0.529f, 0.808f, 0.922f, 1.0f);
+    gluOrtho2D(-10, 10, -10, 10);
 }
 
 int main(int argc, char** argv) {
-    glutInit(&argc, argv); 
-    glutCreateWindow("Simple House in OpenGL"); 
-    glutInitWindowSize(1920, 1080); 
-    init(); 
-    glutDisplayFunc(drawHouse); 
-    glutMainLoop(); 
+    glutInit(&argc, argv);
+    glutCreateWindow("Simple landscape in OpenGL");
+    glutInitWindowSize(1920, 1080);
+    init();
+    glutDisplayFunc(landscape);
+    glutMainLoop();
     return 0;
 }
-
-
-
